@@ -40,10 +40,10 @@ async function analyze(workingDirectory) {
   const analysisOptionsFile = core.getInput('analysis-options-file');
   const args = ['--format', 'machine'];
 
-  if (fs.existsSync(path.resolve(workingDirectory, analysisOptionsFile))) {
-    args.push('--options');
-    args.push(analysisOptionsFile);
-  }
+//   if (fs.existsSync(path.resolve(workingDirectory, analysisOptionsFile))) {
+//     args.push('--options');
+//     args.push(analysisOptionsFile);
+//   }
 
   args.push('.');
 
